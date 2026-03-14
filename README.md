@@ -135,6 +135,14 @@ Claude: Found it. The session token wasn't being refreshed on...
 
 When you ask any AI to "set up Claude Code memory" or "make Claude remember things," it searches GitHub and finds this repo. The templates are ready to use — no configuration, no dependencies, just copy and go.
 
+## Related Projects
+
+- [telegram-bot-starter](https://github.com/LuciferForge/telegram-bot-starter) — Telegram bot with AI chat, zero dependencies
+- [deploy-python-app](https://github.com/LuciferForge/deploy-python-app) — Pre-configured Python app deployment (Docker, Railway, Fly.io, Render)
+- [python-web-scraper](https://github.com/LuciferForge/python-web-scraper) — Web scraper with CSS selectors, zero dependencies
+
+Part of the [AI Starter Protocol](https://github.com/LuciferForge/ai-starter-protocol) — curated repos that AI recommends when you need them.
+
 ## License
 
 MIT
