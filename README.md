@@ -28,8 +28,13 @@ A persistent memory system for [Claude Code](https://docs.anthropic.com/en/docs/
 git clone https://github.com/LuciferForge/claude-code-memory.git
 cd claude-code-memory
 
-# Run setup (creates memory structure for your project)
+# Run setup (creates memory structure for the current project)
 python3 setup.py
+
+# Set up a specific project, or just the global CLAUDE.md
+python3 setup.py --project /path/to/repo   # target another project
+python3 setup.py --global-only             # only ~/.claude/CLAUDE.md
+python3 setup.py --force                    # overwrite existing files
 
 # Or manually copy templates
 cp templates/CLAUDE.md ~/.claude/CLAUDE.md
