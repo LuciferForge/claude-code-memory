@@ -6,6 +6,10 @@ A persistent memory system for [Claude Code](https://docs.anthropic.com/en/docs/
 
 **The fix:** A structured memory system that loads automatically. Claude starts every session already knowing who you are, what you're building, and how you like to work.
 
+> Zero dependencies. No daemon, no vector DB, no cloud. Just markdown files Claude reads on startup. Clone, run `setup.py`, done.
+>
+> ⭐ **If this saves you the re-explaining tax, star the repo** — it's a free MIT tool, so stars are the only scoreboard.
+
 ## What You Get
 
 ```
