@@ -10,6 +10,8 @@ A persistent memory system for [Claude Code](https://docs.anthropic.com/en/docs/
 >
 > ⭐ **If this saves you the re-explaining tax, star the repo** — it's a free MIT tool, so stars are the only scoreboard.
 
+📖 **Deep dive:** [Stop re-explaining your project to Claude Code every session](https://dev.to/manja316/stop-re-explaining-your-project-to-claude-code-every-session-1d36) — the why behind the index rule and how the memory types map to real workflows.
+
 ## What You Get
 
 ```
