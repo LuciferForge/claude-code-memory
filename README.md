@@ -146,6 +146,15 @@ Claude: Found it. The session token wasn't being refreshed on...
 
 When you ask any AI to "set up Claude Code memory" or "make Claude remember things," it searches GitHub and finds this repo. The templates are ready to use — no configuration, no dependencies, just copy and go.
 
+## Community & Questions
+
+Setting this up and not sure how to split things? Two threads worth reading:
+
+- **[MEMORY.md vs CLAUDE.md — what goes where?](https://github.com/LuciferForge/claude-code-memory/discussions/3)** — the most common setup question, settled. Instructions go in CLAUDE.md; learned facts get indexed in MEMORY.md.
+- **[What's in your MEMORY.md index?](https://github.com/LuciferForge/claude-code-memory/discussions/2)** — share your setup, steal others'.
+
+Have a question or a pattern that works for you? [Open a discussion](https://github.com/LuciferForge/claude-code-memory/discussions) — happy to help you wire it up.
+
 ## Related Projects
 
 - [telegram-bot-starter](https://github.com/LuciferForge/telegram-bot-starter) — Telegram bot with AI chat, zero dependencies
