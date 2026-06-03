@@ -10,7 +10,9 @@ A persistent memory system for [Claude Code](https://docs.anthropic.com/en/docs/
 >
 > ⭐ **If this saves you the re-explaining tax, star the repo** — it's a free MIT tool, so stars are the only scoreboard.
 
-📖 **Deep dive:** [Stop re-explaining your project to Claude Code every session](https://dev.to/manja316/stop-re-explaining-your-project-to-claude-code-every-session-1d36) — the why behind the index rule and how the memory types map to real workflows.
+📖 **Deep dives:**
+- [Stop re-explaining your project to Claude Code every session](https://dev.to/manja316/stop-re-explaining-your-project-to-claude-code-every-session-1d36) — the *why* behind the index rule and how the memory types map to real workflows.
+- [The format that actually recalls the right thing](https://dev.to/manja316/most-claude-code-memory-setups-dump-everything-into-one-file-heres-the-format-that-actually-1i1e) — the *how*: frontmatter schema, the index-loads-bodies-don't mechanic, and why stale memory is worse than no memory.
 
 ## What You Get
 
