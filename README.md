@@ -83,6 +83,20 @@ Then start Claude Code. It will automatically detect and use your memory system.
 - Debugging solutions — the fix is in the code
 - Anything already in your project's `CLAUDE.md`
 
+### Why files, not a vector DB?
+
+The usual answer to "give the AI memory" is a vector store (mem0, a Chroma/Pinecone index, an embeddings API). That's the right tool when you have a *large, unstructured* corpus to do fuzzy semantic recall over. It's the wrong tool for the thing you actually need here: a small, curated set of facts that should load **the same way every session**.
+
+| | This repo (markdown files) | Vector-DB memory (mem0 / Chroma / Pinecone) |
+|---|---|---|
+| **Recall** | Deterministic — the index loads in full, every session. You know exactly what Claude sees. | Similarity search — relevant facts can be missed, irrelevant ones surfaced. |
+| **Dependencies** | Zero. No service, no embeddings API, no daemon. | Running vector store and/or an embeddings provider. |
+| **Cost** | Free. | Embedding calls + hosting. |
+| **Inspect / edit** | Open the file. Diff it in `git`. | Query the store; edits are opaque. |
+| **Best for** | Curated, human-scale memory (preferences, decisions, corrections). | Thousands of documents you can't hand-curate. |
+
+Honest trade-off: this approach **does not scale to thousands of memories** — that's what the 200-line index rule enforces. If you need recall over a large document set, use a vector store. If you need Claude to reliably remember *who you are and how you work*, files win because you control exactly what gets recalled. See the [recall-format deep dive](https://dev.to/manja316/most-claude-code-memory-setups-dump-everything-into-one-file-heres-the-format-that-actually-1i1e) for why stale or fuzzy recall is worse than none.
+
 ## Templates
 
 ### `templates/CLAUDE.md` — Custom Instructions
