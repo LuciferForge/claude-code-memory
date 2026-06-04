@@ -63,7 +63,7 @@ Then start Claude Code. It will automatically detect and use your memory system.
 
 ### The Index Rule
 
-`MEMORY.md` is your index file — it's loaded into every conversation. Keep it **under 200 lines** or it gets truncated and you lose context.
+`MEMORY.md` is your index file — it's loaded into every conversation. Keep it **under 200 lines** or it gets truncated — and the truncation is *silent*. You lose the tail of the file and never get an error, so the safest habit is to check the size periodically: `wc -l MEMORY.md`.
 
 **MEMORY.md should contain:**
 - One-line links to topic files with brief descriptions
@@ -138,6 +138,8 @@ Content here.
 5. **Index stays under 200 lines.** This is the hard rule. If your MEMORY.md grows past 200 lines, move details into topic files and keep the index as pointers.
 
 6. **Feedback memories are the highest-value type.** Every time you correct Claude, that correction should become a memory so it never repeats the mistake.
+
+7. **Watch the index size.** Run `wc -l MEMORY.md` now and then. Once it nears 200 lines, move detail into topic files — truncation is silent, so nothing warns you when the tail starts getting dropped.
 
 ## Example: Before vs After
 
